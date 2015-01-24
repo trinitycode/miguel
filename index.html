@@ -36,7 +36,23 @@ $('#addButton').click(function(){
   $('#addResult').text(result)
 })
 </script>
-
+<h2>Basic Subtraction</h2>
+<input value="1" id="subtract1">
+minus
+<input value="2" id="subtract2">
+<input type="button" value="equals" id="subtractButton">
+<span id="subtractResult"></span>
+<script>
+$('#subtractButton').click(function(){
+// Get numbers from the two boxes.
+var subtract1 = Number($('#subtract1').val());
+var subtract2 = Number($('#subtract2').val());
+// Add the two numbers together and store them as result.
+var result = subtract1 - subtract2;
+// Show the result.
+$('#subtractResult').text(result)
+})
+</script>
 
 <h2>Multiplication</h2>
 <input value="1" id="multiply1">
@@ -74,27 +90,6 @@ $('#divideButton').click(function(){
   $('#divideResult').text(result)
 })
 </script>
-
-
-
-<h2>Basic Subtraction</h2>
-<input value="1" id="subtract1">
-minus
-<input value="2" id="subtract2">
-<input type="button" value="equals" id="subtractButton">
-<span id="subtractResult"></span>
-<script>
-$('#subtractButton').click(function(){
-// Get numbers from the two boxes.
-var subtract1 = Number($('#subtract1').val());
-var subtract2 = Number($('#subtract2').val());
-// Add the two numbers together and store them as result.
-var result = subtract1 - subtract2;
-// Show the result.
-$('#subtractResult').text(result)
-})
-</script>
-
 
 
 <h2>Parameter of a Rectangle</h2>
@@ -229,7 +224,11 @@ Get a random number between 1 and
 <input id="howBig" value="20">
 <input type="button" id="randomButton3" value="Get a random number between 1 and 20"> <span id="randomResult3"></span>
 <script>
-// Can you figure out how to do this one?
+$('#randomButton2').click(function(){
+  var result = Math.random()
+  result = Math.ceil(result * 10)
+  $('#randomResult2').text(result)
+})// Can you figure out how to do this one?
 </script>
 
 
