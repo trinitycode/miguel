@@ -92,20 +92,20 @@ $('#divideButton').click(function(){
 </script>
 
 
-<h2>Parameter of a Rectangle</h2>
+<h2>Parimeter of a Rectangle</h2>
 Width:
-<input value="2" id="width">
+<input value="2" id="widthBox">
 Height:
 <input value="3" id="height">
 <input type="button" value="calcuate parameter" id="parameterButton">
-<span id="parameterResult"></span>
+<span id="perimeterResult"></span>
 <script>
-$('#parameterButton').click(function(){
-  var width = Number($('#width').val())
+$('#perimeterButton').click(function(){
+  var width = Number($('#widthBox').val())
   var height = Number($('#height').val())
   // Fill in the formula for a parameter here:
   var result = width + height + width +height
-  $('#parameterResult').text(result)
+  $('#perimeterResult').text(result)
 })
 </script>
 
@@ -221,12 +221,12 @@ $('#randomButton2').click(function(){
 
 <h2>Even bigger Random Numbers</h2>
 Get a random number between 1 and
-<input id="howBig" value="10">
+<input id="howBig" value="123">
 <input type="button" id="randomButton3" value="Get a random number between 1 and your number"> <span id="randomResult3"></span>
 <script>
 $('#randomButton3').click(function(){
   var result = Math.random()
-  result = Math.ceil(result * "10")
+  result = Math.ceil(result * "123")
   $('#randomResult3').text(result)
 })
 </script>
@@ -238,7 +238,11 @@ I'm thinking of a number between 1 and 10. What do you think it is?
 <input id="guessButton" type="button" value="guess">
 <span id="guessAnswer"></span>
 <script>
-
+$('#randomButton2').click(function(){
+  var result = Math.random()
+  result = Math.ceil(result * 10)
+  $('#randomResult2').text(result)
+})
   
 </script>
 
