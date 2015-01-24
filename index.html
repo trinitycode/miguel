@@ -219,14 +219,14 @@ $('#randomButton2').click(function(){
 })
 </script>
 
-<h2>Even bigger Random Numbers (Finish this one yourself.)</h2>
+<h2>Even bigger Random Numbers</h2>
 Get a random number between 1 and
 <input id="howBig" value="10">
 <input type="button" id="randomButton3" value="Get a random number between 1 and your number"> <span id="randomResult3"></span>
 <script>
 $('#randomButton3').click(function(){
   var result = Math.random()
-  result = Math.ceil(result * "randomButton3")
+  result = Math.ceil(result * "howBig")
   $('#randomResult3').text(result)
 })
 </script>
