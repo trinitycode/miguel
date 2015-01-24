@@ -238,10 +238,10 @@ I'm thinking of a number between 1 and 10. What do you think it is?
 <input id="guessButton" type="button" value="guess">
 <span id="guessAnswer"></span>
 <script>
-$('#guessButton').click(function(){
+$('#guessBox').click(function(){
   var result = Math.random()
   result = Math.ceil(result * 10)
-  $('#guessButton').text(result)
+  $('#guessBox').text(result)
 })
   
 </script>
